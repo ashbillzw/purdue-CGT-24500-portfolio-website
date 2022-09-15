@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>Zack's Portfolio | CGT245</title>
 		<link rel="icon" type="image/x-icon" href="./images/favicon.png">
+		<link href="/css/master.css" rel="stylesheet">
+		<script src="/js/my_animations.js"></script>
 		<!-- Bootstrap -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	</head>
@@ -37,9 +39,6 @@
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled">Minecraft</a>
-					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">Purdue</a>
 						<ul class="dropdown-menu">
@@ -59,7 +58,7 @@
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-12 text-center" style="padding: 0px;">
-					<img class="img-fluid" src="./images/banner_a.png" alt="banner" style="width:100%; height:auto;">
+					<img class="img-fluid animated my-fadein" src="images/banners/banner_a.png" alt="banner" style="width:100%; height:auto;">
 				</div>
 			</div>
 		</div>
@@ -73,10 +72,76 @@
 			<hr>
 			<br>
 			<div class="row justify-content-center">
-				<div class="col-12 col-md-10 col-lg-8 col-xl-6">
+				<div class="col-12 col-10-lg" style="max-width: 500px;">
 					<h2>The Beginning</h2>
-					<p>&emsp;</p>
+					<p>&emsp;Every 3D-game level once started as a "Graybox" prototype where its general layouts are outlined by the developers. Creating Graybox instead of detailed levels consume less time and effort, allowing developers to conduct tests and collaborations earlier on in a project. Thus, Graybox environment prototyping is an essential tool that all developers should utilize.</p>
 				</div>
+				<div class="col-2 d-none d-lg-block" style="max-width: 200px;">
+					<img src="./images/decals/gray_box.png" alt="gray_box" style="max-width: 200px;">
+				</div>
+				<div class="col-12 d-lg-none">
+					<img class="img-fluid d-block" src="./images/decals/gray_box.png" alt="gray_box" style="max-width: 30%; margin: auto;">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 d-none d-lg-block" style="max-width: 700px;">
+					<h2>The Project</h2>
+					<p>&emsp;The first project of CGT245, named "Gray Box Environment", required students to find a preferred house plan and construct a Graybox level that resembles it. I chose a medium sized, two floor, four beds by four baths farmhouse plan without a garage for this project that offers a decent amount of details without being overly complex.</p>
+				</div>
+				<div class="col-12 d-lg-none" style="max-width: 500px;">
+					<h2>The Project</h2>
+					<p>&emsp;The first project of CGT245, named "Gray Box Environment", required students to find a preferred house plan and construct a Graybox level that resembles it. I chose a medium sized, two floor, four beds by four baths farmhouse plan without a garage for this project that offers a decent amount of details without being overly complex.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<img class="img-fluid d-block" src="./images/floor_plans.png" style="max-width: 900px; margin: auto;" alt="floor_plans">
+					<p class="figure-caption">Floor plan image credit: <a href="https://www.houseplans.com/plan/2668-square-feet-4-bedroom-4-bathroom-0-garage-farmhouse-bungalow-classical-sp295482">houseplans.com</a>.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12" style="max-width: 700px;">
+					<p>&emsp;As preparation before Grayboxing, I converted the measurements marked as feet and inches in the floorplan into in-game length units with a scale of approximately 200 units per meter. Additionally, every primary wall length is rounded down to the nearest 50, aligning everything to the 50-grid.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<img class="img-fluid d-block" src="./images/plan_screenshot_sbs.png" style="max-width: 900px; margin: auto;" alt="plan_screenshot_sbs">
+					<p class="figure-caption">Notice how all brushes align perfectly with the 50-grid.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12" style="max-width: 700px;">
+					<p>&emsp;Not only do proper alignments make a map clean and easier to work with, but they also allow me to ensure that there is no overlap between any adjacent geometries. This probably isn't necessary for Unreal but, as mentioned in my CGT245 <a href="./cgt245.html">homepage</a>, I learned this practice when working with Hammer editor for Source where overlapping map geometry would break physics simulational mechanics, including bullet's wall penetration machinic in Counter-Strike titles or cannon ricochet in HL2.</p>
+					<p>&emsp;With the floor separated into sections and each section corresponding to a marked zone in the floor plan, I can apply some random temporary textures to the rooms that visually outline each room so I do not get confused or disoriented when modeling. This method, compared to directly applying the floor plan image as a texture on the floor, has the added benefit of making future retexturing simpler.</p>
+					<p style="font-size: 10px; color: grey;">&emsp;Also that I'm not clever enough to figure out how to texture the floor without breaking the image's aspect ratio :&#40;<br>&emsp;Took so much effort to understand how to program this cool transition below --v</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row align-items-center justify-content-center" style="margin: auto; max-width: 700px; border: 4px solid grey;">
+			<div class="col-6 justify-content-center" style="max-width: 300px;">
+				<div class="d-grid gap-1 gap-md-5">
+					<button id="crossfade-btn-1a" class="btn btn-primary" type="button" onclick="crossfade('1a');" disabled>Outer-wall</button>
+					<button id="crossfade-btn-1b" class="btn btn-primary" type="button" onclick="crossfade('1b');" >Interior</button>
+					<button id="crossfade-btn-1c" class="btn btn-primary" type="button" onclick="crossfade('1c');" >Porches</button>
+				</div>
+			</div>
+			<div class="col-6" style="position: relative; max-width: 400px;">
+				<div class="d-block" style="max-width: 700px;">
+					<div class="crossfade-group crossfade-group-1" style="position:relative">
+						<img id="crossfade-img-1a" class="img-fluid crossfade-base" src="./images/first_floor_top_1.png" alt="first_floor_top_1"/>
+						<img id="crossfade-img-1b" class="img-fluid" src="./images/first_floor_top_2.png" alt="first_floor_top_2"/>
+						<img id="crossfade-img-1c" class="img-fluid" src="./images/first_floor_top_3.png" alt="first_floor_top_3"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-12" style="max-width: 700px;">
+				<p>&emsp;Test</p>
 			</div>
 		</div>
 	</section>
