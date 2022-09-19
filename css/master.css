@@ -1,5 +1,6 @@
 /* CSS Document */
 
+/*Crossfade*/
 .crossfade-group img:not(.crossfade-base){
 	position: absolute;
 	left: 0;
