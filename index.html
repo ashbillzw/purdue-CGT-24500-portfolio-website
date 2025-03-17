@@ -18,20 +18,10 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav me-auto mb-2 mb-md-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">Purdue</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item disabled" href="">CGT141</a></li>
-							<li><a class="dropdown-item" href="CGT245/cgt245.html">CGT245</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
-					</li>
-				</ul>
+
+				<!--#include virtual="/templates/sitewide-navitems.html" -->
+
+			</ul>
 			</div>
 		</div>
 	</nav>
@@ -41,7 +31,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-lg-8 col-xl-6 offset-sm-0 offset-lg-2 offset-xl-3">
-						<h1>Welcome to Zack's Portfolio!</h1>
+						<h1>Welcome to my Portfolio!</h1>
 						<p>Greetings! Here you will find information about me, my CGT classes, and more. This website is NOT created or hosted with Wix alike but handcrafted and self-hosted with a old laptop in my dorm running Nginx on Debian.</p>
 						<p><a class="btn btn-primary btn-lg" href="" role="button">More About Decentralization »</a></p>
 					</div>
@@ -55,7 +45,7 @@
 			<div class="row">
 				<div class="col-sm-9 col-md-7 col-xl-5 offset-sm-0 offset-md-1 offset-xl-2">
 					<h1>About Me</h1>
-					<p>&emsp; I'm Yake Wang, Zack is my preferred name. I'm a Purdue Boilermaker and currently a freshman at CGT, majoring in game development. I grew up in Shenzhen, China, and moved to Massachusetts, US as an international student in 2019. Later, I finished high school in Delaware before joining Purdue. I have internship work experience in programming-related jobs in multiple tech companies including <a href="https://www.dji.com">DJI</a>. My dream is to become an indie game developer in the future.</p>
+					<p>&emsp; I'm Yake Wang, Zack is my preferred name. I'm a Purdue Boilermaker and currently a sophomore at CGT, majoring in game development. I grew up in Shenzhen, China, and moved to Massachusetts, US as an international student in 2019. Later, I finished high school in Delaware before joining Purdue. I have internship work experience in programming-related jobs in multiple tech companies including <a href="https://www.dji.com">DJI</a>. I dream to become an indie game developer in the future.</p>
 				</div>
 				<div class="col-3 d-none d-sm-block">
 					<br><br>
@@ -114,18 +104,9 @@
 			</div>
 		</div>
 	</section>
-	<br><hr>
-	<section>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
-					<h2>Contact Me</h2>
-					<p>Yake Wang | 400 McCutcheon Drive, Room 175, West Lafayette, IN, USA</p>
-					<p>Email (personal): me@yake.wang<br>Email (school): zackwang@purdue.edu<br>Cell: +1 (508) 826-6534</p>
-				</div>
-			</div>
-		</div>
-	</section>
+
+	<!--#include virtual="/templates/sitewide-footer.html" -->
+
 </main>
 		<!-- Bootstrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
