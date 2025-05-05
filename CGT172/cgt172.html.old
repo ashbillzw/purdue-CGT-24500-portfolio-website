@@ -19,37 +19,31 @@
 			<div class="row text-center">
 				<h1>CGT172: UX Design Studio I</h1>
 			</div>
-			<br>
+			<hr>
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8 col-xl-6">
-					<h2>CGT172 Projects</h2>
+					<h2>Portfolio (Work in Progress)</h2>
+					<p>&emsp;Mockup: I envision the eventual portfolio to have a main page art that also serves as a nav center by featuring buttons within the main page art that link to different projects and works. (The image shown below is only for the purpose of showing an example of the type of main page styling and is not a finalized depiction of the design) Currently, an alternative nav method is used in the nav bar(‘Table of Contents’ dropdown) located at the top-left of the page.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-10 col-lg-7 col-xl-5">
+					<img class="img-fluid" style="border: 5px solid black;" src="images/mockup-1.jpg" alt="images/mockup-1.jpg">
 				</div>
 			</div>
 			<hr>
 			<div class="row justify-content-center">
-				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
-					<a href="./exercise1/exercise1.html"><img class="img-fluid" style="border: 5px solid black;" src="images/exercise1-pos1.jpg" alt="images/exercise1-pos1.jpg"></a>
-				</div>
-				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
-					<a href="./project1/project1.html"><img class="img-fluid" style="border: 5px solid black;" src="images/project1-pos1.jpg" alt="images/project1-pos1.jpg"></a>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
-					<a href="./project2/project2.html"><img class="img-fluid" style="border: 5px solid black;" src="images/project2-pos1.jpg" alt="images/exercise1-pos1.jpg"></a>
-				</div>
-				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
-					<a href="./project3/project3.html"><img class="img-fluid" style="border: 5px solid black;" src="images/project3-pos1.jpg" alt="images/project1-pos1.jpg"></a>
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8 col-xl-6">
-					<h2>Portfolio: About Me</h2>
-					<hr>
-					<img src="./images/resume.png" alt="resume" class="img-fluid" style="width:500px;">
+					<h2>Alternative Layout</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
+					<a href="./files/exercise1.pdf"><img class="img-fluid" style="border: 5px solid black;" src="images/exercise1-pos1.jpg" alt="images/exercise1-pos1.jpg"></a>
+				</div>
+				<div class="col-6 col-md-5 col-lg-4 col-xl-3">
+					<a href="./files/project1.pdf"><img class="img-fluid" style="border: 5px solid black;" src="images/project1-pos1.jpg" alt="images/project1-pos1.jpg"></a>
 				</div>
 			</div>
 		</div>
