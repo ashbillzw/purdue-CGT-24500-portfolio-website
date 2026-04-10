@@ -32,7 +32,31 @@
 				<div class="row">
 					<div class="col-sm-12 col-lg-8 col-xl-6 offset-sm-0 offset-lg-2 offset-xl-3">
 						<h1>Welcome to my Portfolio!</h1>
-						<p>Greetings! Here you will find information about me, my CGT classes, and more.</p>
+						<p>Greetings! Here you will find information about my projects, skills, and more.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-md-7 col-xl-5 offset-sm-0 offset-md-1 offset-xl-2">
+					<h1>Most Recent Projects</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row justify-content-center g-4">
+				<div class="col-md-4">
+					<div class="p-3 border h-100">
+						<h4>Emergency Escape Simulator</h4>
+						<p class="mb-0">WIP until end of semester.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="p-3 border h-100">
+						<h4><a href="./CGT390SG/ProDrivingSimulator/game.html">Driving Simulator &amp; Autonomous Vehicle Standardized Scoring Env</a></h4>
 					</div>
 				</div>
 			</div>
@@ -44,7 +68,20 @@
 			<div class="row">
 				<div class="col-sm-9 col-md-7 col-xl-5 offset-sm-0 offset-md-1 offset-xl-2">
 					<h1>About Me</h1>
-					<p>&emsp; I'm Yake Wang, Zack is my preferred name. I'm a senior this year in Purdue's Polytechnic Institute, majoring in game development. I grew up in Shenzhen, China, and moved to Massachusetts, US as an international student in 2019. Later, I finished high school in Delaware before joining Purdue. I have internship work experience in programming-related jobs in multiple tech companies including <a href="https://www.dji.com">DJI</a>. I dream to become an indie game developer in the future.</p>
+					<p>I'm Yake Wang, and Zack is my preferred name. I am a Game Development student at Purdue University with a multidisciplinary background in programming, game design, engineering, and creative media. My experience includes various software development internships including one at <a href="https://www.dji.com">DJI</a>, check out my <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal">resume</a> for details. I combine technical skills with creative thinking to build both passion and professional projects.</p>
+					<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="portfolioModalLabel">Resume</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body text-center">
+									<img src="./images/resume.png" class="img-fluid" alt="Resume Preview">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-3 d-none d-sm-block">
 					<br><br>
@@ -57,23 +94,54 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-md-7 col-xl-5 offset-sm-0 offset-md-1 offset-xl-2">
+				<div class="col-sm-11 col-md-9 col-xl-7 offset-sm-0 offset-md-1 offset-xl-2">
 					<h1>What I Do</h1>
-				</div>
-			</div>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-sm-4 col-xl-3 text-center">
-					<h4><img src="images/controller.png" alt="50"> Game Design</h4>
-					<p>Not just a college major, game design has been a passion for me. I drafted up many bits of interesting game ideas during my spare time. It all started with a few minigames scripted using Python with the <a href="https://www.pygame.org">Pygame</a> library. In the process of learning more sophisticated game development toolsets, including Unreal and Unity, I have created some well-polished demo projects.</p>
-				</div>
-				<div class="col-sm-4 col-xl-3 text-center">
-					<h4><img src="images/pros.png" alt="50"> Robotics</h4>
-					<p>I was first introduced to the concept of programming when I began working on robotics competitions, which used beginner-friendly graphical programming tools with <a href="https://en.wikipedia.org/wiki/Lego_Mindstorms#RCX">LEGO RCX</a>. I later studied C/C++ programming languages for use in more professional competitions like <a href="https://www.vexrobotics.com">VEX Robotics</a> and <a href="https://www.robomaster.com/en-US">DJI RM</a>. Robotics trained my coding and engineering skills while bringing me challenges and friendships.</p>
-				</div>
-				<div class="col-sm-4 col-xl-3 text-center">
-					<h4><img src="images/minecraft.png" width="50" alt="50"> Minecraft!</h4>
-					<p>I currently host a modded Minecraft server with over 100 total players. Check out the <a href="https://mc.ashbill.com">online 3D world map<a> and the <a href="https://modrinth.com/modpack/niijima-railways">Niijima Railways modpack on Modrinth</a>. Some of the mods featured in this server were programmed by me. I consider this game to be one of the greatest games with its remarkable freedom that empowered its vast and amazing communities and endless creativity.</p>
+					<div class="row justify-content-center g-4">
+						<div class="col-sm-6 text-center">
+							<h4>Programming</h4>
+							<div class="d-inline-block text-start">
+								<ul class="mb-0">
+									<li>C / C# / Java / JS / Python</li>
+									<li>Software Design / FS Implementation</li>
+									<li>Web Development / Bootstrap / Vue</li>
+									<li>Git / Dev Planning / Project Management</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 text-center">
+							<h4>Game Design</h4>
+							<div class="d-inline-block text-start">
+								<ul class="mb-0">
+									<li>Unreal / Unity / Godot</li>
+									<li>Game Systems Design / Level Design</li>
+									<li>Game Audio / Media Iteration</li>
+									<li>UI-UX Design / Feedback Management</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 text-center">
+							<h4>Electronic / SYS Engineering</h4>
+							<div class="d-inline-block text-start">
+								<ul class="mb-0">
+									<li>Embedded Systems / Robotics</li>
+									<li>Solidworks / Autodesk Fusion</li>
+									<li>Hardware-software Integration</li>
+									<li>Problem Solving / Critical Thinking</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 text-center">
+							<h4>Other Skills</h4>
+							<div class="d-inline-block text-start">
+								<ul class="mb-0">
+									<li>English / Chinese / Japanese (JLPT-N2)</li>
+									<li>Adobe Premiere / Photoshop</li>
+									<li>Community / Server Administration</li>
+									<li>Cross-disciplinary Collaboration</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
